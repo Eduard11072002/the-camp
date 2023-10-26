@@ -1,0 +1,821 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL CSS*/
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(28, 99, 0);
+}
+
+
+a:link{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*INDEX*/
+
+/*BANNER*/
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/bgd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: #ff5600;
+    font-size: 25px;
+}
+.menu{
+    width: 50px;
+    float: left;
+    height: 70px;
+}
+
+
+
+span{
+     color: #ff5600;
+
+}
+
+ul{
+    float: right;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+ul li a:hover{
+    color: #ff5600;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-family:cursive;
+
+}
+
+.content h1{
+    color: #ff5600;
+    font-size: 50px;
+}
+
+.content p{
+    color: #ff5600;
+    font-size: 25px;
+    
+    
+}
+
+.content button{
+    width: 150px;
+    height: 50px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #ff5600;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: border-color 0.3s ease;
+}
+
+.content button:hover{
+    background-color: #ff5600;
+    border-color:#fff ;
+
+}
+
+.content button a{
+    color: #fff;
+}
+
+@media screen and (max-width:600px){
+    ul{
+        flex-direction: column;
+    }
+
+    
+}
+
+/*ABOUT*/
+
+#about{
+    width: 100%;
+    height: 238vh;
+    background-color: green;
+    font-family: cursive;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+
+p{
+    font-size: large;
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: justify;
+}
+
+p::first-letter{
+    margin-left: 50px;
+}
+
+.text1{
+    width: 50%;
+    display: inline-block;
+    
+}
+
+img{
+    width: 45%;
+    float: right;
+    
+
+}
+
+.text2{
+    width: 50%;
+    display: inline-block;
+    float: right;
+    margin-top: -400px;
+
+}
+
+#peisage{
+    align-items: center;
+    width: 94%;
+    margin-right: 38px;
+    padding-top: 20px;
+
+}
+
+@media screen and (max-width:600px){
+    #about{
+        height: 380vh;
+    }
+    .text1{
+        width: 100%;
+    }
+    .text2{
+        width: 100%;
+        margin-top: 0px;
+    }
+    #peisage{
+        margin-right: 13px;
+    }
+}
+
+/*GALLERY*/
+
+#gallery{
+    width: 100%;
+    height: 100vh;
+    background-color: #964b00;
+    font-family: cursive;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 100px;
+    max-width: 1200px;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 50px;
+    
+}
+
+#card1, #card2, #card3, #card4{
+    width: 100%;
+    align-items: center;
+
+}
+
+.card-info h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-info button{
+    width: 95%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #964b00;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-left: 5px;
+    font-size: large;
+}
+
+.card-info button a{
+    color: #fff;
+    
+}
+
+.card-info button a:hover{
+    color: #964b00;
+}
+
+.card-info button:hover{
+    border-color: #964b00;
+    background-color: #fff;
+    color: #964b00;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    transition: border-color 0.5s ease;
+    
+}
+
+.cards{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    margin-left: 10px;
+    
+}
+
+.card img #card1{
+    width: 500px;
+
+}
+
+.p1::first-letter{
+    margin-left: 0px;
+}
+
+.p2::first-letter{
+    margin-left: 0px;
+}
+
+.p3::first-letter{
+    margin-left: 0px;
+}
+
+.p4::first-letter{
+    margin-left: 0px;
+}
+
+@media screen and (max-width:600px){
+    #gallery{
+        height: 280vh;
+    }
+    .card-container{
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .p1{
+        text-align: center;
+        
+    }
+    .p2{
+        text-align: center;
+        
+    }
+    .p3{
+        text-align: center;
+        
+    }
+    .p4{
+        text-align: center;
+        
+    }
+
+}
+/*INFO*/
+#info{
+    width: 100%;
+    height: 110vh;
+    background-color: #008080;
+    font-family: cursive;
+}
+
+ol{
+    margin-left: 100px;
+    color: #fff;
+    font-size: large;
+}
+
+h4{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.i{
+    margin-left: 30px;
+    color: #fff;
+    font-size: large;
+}
+
+@media screen and (max-width:600px){
+    #info{
+        height: 180vh;
+    }
+
+}
+
+
+/*CONTACT*/
+#contact{
+    width: 100%;
+    background-color: #222222;
+    font-family: cursive;
+
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.footer-row h1{
+    margin: 10px 0;
+    color: #fff;
+
+}
+.footer-row p{
+    line-height: 35px;
+}
+
+
+
+.f1{
+    margin-left: 0;
+    color: #fff;
+    font-size: large;
+}
+
+.f1::first-letter{
+    margin-left: 0px;
+}
+
+.footer-row .p1{
+    margin-left: 10px;
+}
+
+.footer-center h1{
+    text-align:center;
+    line-height: 30px;
+    
+    
+}
+.footer-center p a{
+    color: #fff;
+    height: 20px;
+}
+
+.btn-fb{
+    width: 100%;
+    height: 35px;
+    background-color: #3b5998;
+    border: 0.5px;
+    text-align: center;
+    border-color: #fff;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-left: 6px;
+    margin-top: 25px;
+}
+
+.btn-fb:hover{
+    background-color: transparent;
+    transition: 0.5s;
+  
+  }
+
+  .btn-fb a{
+    color: #fff;
+    text-decoration: none;
+    padding-top: 0px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #3b5998;
+    border-radius: 12px;
+   
+  }
+
+  .btn-fb a:hover{
+    color: #3b5998;
+    font-weight: bold;
+  
+  }
+
+  .btn-ig{
+    width: 100%;
+    height: 32px;
+    background-color: #e4405f;
+    border: 0.5px;
+    border-color: #fff;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-left: 6px;
+    margin-top: 5px;
+  
+    }
+  
+    .btn-ig:hover{
+      background-color: transparent;
+      transition: 0.5s;
+  
+    }
+  
+    .btn-ig a{
+      color: #fff;
+      text-decoration: none;
+      padding-top: 0px;
+      font-size: 20px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      border: 2px solid #e4405f;
+      border-radius: 12px;
+      
+    }
+  
+    .btn-ig a:hover{
+      color: #e4405f;
+      font-weight: bold;
+      
+      
+    }
+
+    .btn-tt{
+        width: 100%;
+        height: 35px;
+        background-color: #1da1f2;
+        border: 0.5px;
+        border-color: #fff;
+        border-radius: 12px;
+        font-size: 15px;
+        margin-left: 6px;
+        margin-top: 5px;
+      
+        }
+      
+        .btn-tt:hover{
+          background-color: transparent;
+          transition: 0.5s;
+      
+        }
+      
+        .btn-tt a{
+          color: #fff;
+          text-decoration: none;
+          padding-top: 3px;
+          font-size: 20px;
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+          border: 2px solid #1da1f2;
+          border-radius: 12px;
+          
+        }
+      
+        .btn-tt a:hover{
+          color: #1da1f2;
+          font-weight: bold;
+          
+        }
+
+.footer-left a{
+    text-decoration: none;
+    
+}
+
+.footer-left{
+    text-align: left;
+    line-height: 30px;
+    
+}
+
+.button{
+    width: 80%;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    align-items: center;
+}
+.button:hover{
+    background-color: #fff;
+}
+
+.button a{
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+.button a:hover{
+    color: #000;
+}
+
+.footer-right{
+    line-height: 30px;
+    
+}
+
+.footer-right .text{
+    color: #fff;
+    text-align: left;
+}
+
+
+.footer-right .btn1{
+    border: #fff 2px solid;
+    width: 100%;
+}
+
+.footer-right .btn1:hover{
+    background-color: #fff;
+}
+
+
+.footer-right .btn1 a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 22px;
+    
+}
+
+.footer-right .btn1 a:hover{
+    color: #000;
+}
+
+.footer-right .btn2{
+    border: #fff 2px solid;
+    width: 100%;
+}
+
+.footer-right .btn2:hover{
+    background-color: #fff;
+}
+
+
+.footer-right .btn2 a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 45px;
+}
+
+.footer-right .btn2 a:hover{
+    color: #000;
+}
+
+.cph{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #222222;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width:600px){
+    .footer-row{
+        width: 98%;
+    }
+    .footer-row h1{
+        text-align: center;
+    }
+
+    .footer-row p{
+        text-align: center;
+    }
+
+    .f1{
+        text-align: center;
+        
+    }
+
+    .button{
+        margin-left: 40px;
+    }
+}
+
+/*CARDS*/
+
+.c{
+    color: #fff;
+    text-align: center;
+    
+}
+
+/*REGISTER YOUR CHILD*/
+
+.wrapper{
+    width: 800px;
+    height: 130vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 270px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 40px 250px 70px;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+
+  .wrapper header h5{
+    color: green;
+    font-size: 30px;
+  }
+
+  .form-left{
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 30px;
+    width: 40%;
+    margin-top: -100px;
+    
+    
+  }
+
+  .form-right{
+    display: inline-block;
+    margin-right: 1px;
+    width: 40%;
+    
+    
+  }
+
+  h6{
+    font-size: large;
+    text-align: center;
+    padding-bottom: 30px;
+
+  }
+
+  .wrapper form input{
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 80%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #555555;
+    
+  }
+
+  .wrapper label{
+    margin-left: 38px;
+   
+  }
+
+  .wrapper #checkbox{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    
+  }
+
+  select{
+    border: 1px solid #555555;
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+
+  select option{
+    color: #000;
+  }
+
+  select{
+    margin-top: 5px;
+  }
+
+
+  #rbutton{
+    height: 35px;
+    width: 40%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff;
+    font-size: 15px;
+  }
+
+  #rbutton:hover{
+    background-color: #fff;
+    color: green;
+    border: 2px solid green;
+    font-size: 50;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width:600px){
+    .wrapper{
+        margin-left: 5px;
+        width: 600px;
+        height: 850px;
+    }
+
+    .wrapper header{
+        padding: 40px 150px 70px;
+
+    }
+  }
+
+  /*T&C*/
+
+  #checkbox2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .labelc{
+    text-align: center;
+  }
+
+
+  
