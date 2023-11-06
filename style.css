@@ -205,7 +205,7 @@ img{
 
 @media screen and (max-width:600px){
     #about{
-        height: 380vh;
+        height: 350vh;
     }
     .text1{
         width: 100%;
@@ -326,11 +326,11 @@ img{
 
 @media screen and (max-width:600px){
     #gallery{
-        height: 280vh;
+        height: 230vh;
     }
     .card-container{
         flex-direction: column;
-        margin-right: 20px;
+        margin-right: 50px;
     }
     .p1{
         text-align: center;
@@ -378,7 +378,7 @@ h4{
 
 @media screen and (max-width:600px){
     #info{
-        height: 180vh;
+        height: 150vh;
     }
 
 }
@@ -649,6 +649,9 @@ h4{
 @media screen and (max-width:600px){
     .footer-row{
         width: 98%;
+    }
+    .footer-left{
+        margin-left: 30px;
     }
     .footer-row h1{
         text-align: center;
